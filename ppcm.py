@@ -2,7 +2,7 @@ import  pgcd
 
 def ppcm(a,b):
     print("**Calcul du pgcd**")
-    pgcd_resultat = pgcd.pgcd(a,b,True)
+    pgcd_resultat = pgcd.pgcdMod(a,b,True)
     print("**Calcul du ppcm**")
     print("a x b = {}".format(a*b))
     print("{}/{}".format(a*b, pgcd_resultat))
@@ -10,4 +10,4 @@ def ppcm(a,b):
 
 
 if __name__ == "__main__":
-    print("Le ppcm est {}".format(int(ppcm(666,777))))
+    print("Le ppcm est {}".format(int(ppcm(120,240))))

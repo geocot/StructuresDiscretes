@@ -1,4 +1,4 @@
-def pgcd(a,b, verbeux):
+def pgcdSoustraction(a,b, verbeux):
     if verbeux:
         print("a = {}, b ={}".format(a,b))
     while a!=b:
@@ -15,5 +15,17 @@ def pgcd(a,b, verbeux):
         print("Le pgcd est {}".format(a))
     return a
 
+
+def pgcdMod(a,b,verbeux):
+    if b != 0:
+        if verbeux:
+            print("pgcd({}, {} mod {})".format(b,a,b))
+        return pgcdMod(b, a % b, verbeux)
+    else:
+        print("pgcd({}, {} mod {})".format(b, a, b))
+        print("Donc le pgcd est {}".format(a))
+        return a
+
 if __name__ == "__main__":
-    print(pgcd(825,975, True))
+    print(pgcdSoustraction(120,80, False))
+    print(pgcdMod(120, 80, True))
