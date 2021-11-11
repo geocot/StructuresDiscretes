@@ -1,3 +1,5 @@
+#Fait par Martin Couture
+#Source: https://github.com/geocot/StructuresDiscretes
 import  pgcd
 
 def ppcm(a,b):

@@ -1,3 +1,6 @@
+#Fait par Martin Couture
+#Source: https://github.com/geocot/StructuresDiscretes
+
 def pgcdSoustraction(a,b, verbeux):
     if verbeux:
         print("a = {}, b ={}".format(a,b))
